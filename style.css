@@ -349,7 +349,7 @@ h2 {
 }
 
 .background-black {
-    background-color: #dcd9ee;
+    background-color: #eeedf4;
     color: #040234;
 }
 
@@ -485,7 +485,8 @@ h2 {
         text-align: center;
         line-height: 1.1;
         transition: 220ms all ease-in-out;
-
+        margin-top: 2rem;
+        width: 51%;
     }
 
     .button a {
