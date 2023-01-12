@@ -195,6 +195,7 @@ header .lead {
     header .lead {
         max-width: 28ch;
     }
+
 }
 
 /* Main */
@@ -351,19 +352,73 @@ h2 {
     color: #040234;
 }
 
-.flexbox {
+.flex-container {
     display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
 }
 
-.flexbox--aligncenter {
-    -webkit-box-align: center;
-    align-items: center;
+.button {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
 }
 
-.footer-logo {
-    min-height: 40px;
+.guide-image {
+    width: 30%;
 }
 
 .clear-margins {
-    margin: 0;
+    text-align: center;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+/* Media Query for the Footer */
+@media (max-width: 767px) {
+    .padding-v-md {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        display: block;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .guide-image {
+        display: block;
+        width: 90%;
+    }
+}
+
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        background-color: rgb(156, 156, 89);
+    }
+
+    .card__img {
+        width: 50%;
+        border-radius: 0%;
+    }
+
+    .guide-image {
+        display: block;
+        width: 50%;
+        margin: auto;
+    }
+
+    .flex-container p {
+        width: 100%;
+    }
+
+    .button {
+        display: block;
+        width: 100%;
+        margin-top: 1rem;
+    }
 }
