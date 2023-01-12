@@ -303,6 +303,7 @@ h2 {
 
 .card__content {
     padding: 24px;
+    text-align: center;
 }
 
 .btn {
@@ -359,14 +360,9 @@ h2 {
     justify-content: center;
 }
 
-.button {
-    display: block;
-    width: 100%;
-    margin-top: 1rem;
-}
-
 .guide-image {
     width: 30%;
+    margin: auto;
 }
 
 .clear-margins {
@@ -375,6 +371,34 @@ h2 {
 
 .text-align-center {
     text-align: center;
+}
+
+.button {
+    align-items: center;
+    justify-content: center;
+    align-self: start;
+    background-color: #3e68ff;
+    border-radius: 8px;
+    box-shadow: 0 3px 5px rgb(0 0 0 / 18%);
+    padding: 0.25em 0.75em;
+    min-height: 44px;
+    text-align: center;
+    line-height: 1.1;
+    transition: 220ms all ease-in-out;
+    cursor: pointer;
+    display: flex;
+    min-width: 10ch;
+    margin: auto;
+}
+
+.button:hover,
+.button:active {
+    background-color: #000209;
+}
+
+.button a {
+    text-decoration: none;
+    color: #fff;
 }
 
 /* Media Query for the Footer */
@@ -390,13 +414,44 @@ h2 {
 
     .guide-image {
         display: block;
-        width: 90%;
+        width: 100%
+    }
+
+    .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        align-self: start;
+        background-color: #3e68ff;
+        border-radius: 8px;
+        box-shadow: 0 3px 5px rgb(0 0 0 / 18%);
+        padding: 0.25em 0.75em;
+        min-height: 44px;
+        text-align: center;
+        line-height: 1.1;
+        transition: 220ms all ease-in-out;
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .flex-container p {
+        width: 100%;
+    }
+
+    .button a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .button:hover,
+    .button:active {
+        background-color: #020511;
     }
 }
 
 
 /* Media Query for low resolution  Tablets, Ipads */
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 800px) {
     body {
         background-color: rgb(156, 156, 89);
     }
@@ -417,8 +472,29 @@ h2 {
     }
 
     .button {
-        display: block;
-        width: 100%;
-        margin-top: 1rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        align-self: start;
+        background-color: #3e68ff;
+        width: 70%;
+        border-radius: 8px;
+        box-shadow: 0 3px 5px rgb(0 0 0 / 18%);
+        padding: 0.25em 0.75em;
+        min-height: 44px;
+        text-align: center;
+        line-height: 1.1;
+        transition: 220ms all ease-in-out;
+
+    }
+
+    .button a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .button:hover,
+    .button:active {
+        background-color: #000209;
     }
 }
