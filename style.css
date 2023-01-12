@@ -56,3 +56,77 @@ img {
     max-width: 100%;
     display: block;
 }
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+ * Typography
+ */
+
+h1,
+h2,
+h3,
+.lead,
+button,
+.btn,
+nav li,
+label {
+    font-family: "Kulim Park", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+/*
+  * Header
+  */
+
+header {
+    padding: 60px 0;
+    text-align: center;
+}
+
+header h1 {
+    color: #fff;
+}
+
+header .lead {
+    max-width: 40ch;
+    color: #fff;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 125%;
+    letter-spacing: 0.03em;
+}
+
+.header-wrapper {
+    min-height: 50vh;
+    background-image: url(images/hubble_deep_field-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
