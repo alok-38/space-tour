@@ -108,6 +108,51 @@ header {
     text-align: center;
 }
 
+/* Header logo and its animation */
+
+.header-logo {
+    min-height: 60px;
+    -webkit-transition: all 450ms ease-in 80ms;
+    transition: all 450ms ease-in 80ms;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    margin: auto;
+}
+
+.header-logo:hover {
+    -webkit-transform: translate(8vw, -300%) scale(.6);
+    transform: translate(8vw, -300%) scale(.6);
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0.1;
+        -webkit-transform: translateY(25%);
+        transform: translateY(25%);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.1;
+        -webkit-transform: translateY(25%);
+        transform: translateY(25%);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+}
+
+/* Animation Ends here */
 header h1 {
     color: #fff;
 }
