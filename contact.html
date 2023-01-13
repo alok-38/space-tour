@@ -29,18 +29,18 @@
                     <label>Don't fill this out if you're human: <input name="bot-field"></label>
                 </p>
                 <div class="form-field">
-                    <label for="first_name">Name</label>
-                    <input type="text" id="first_name" name="first_name">
+                    <label for="fullName">Name</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="John Doe">
                 </div>
                 <div class="form-field">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="email" placeholder="john@email.com">
                 </div>
                 <div class="form-field">
                     <label for="message">Message</label>
-                    <textarea name="message" id="message" cols="30" rows="5"></textarea>
+                    <textarea name="message" id="message" cols="30" rows="5" placeholder="I love you"></textarea>
                 </div>
-                <div class="button">
+                <div onclick="sendContact()" class="button">
                     <a href="contact.html">Contact Us</a>
                 </div>
             </form>
