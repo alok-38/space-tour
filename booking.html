@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Kulim+Park:400,600&display=swap" rel="stylesheet" />
+    <title>Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header-wrapper background-dark">
+        <header class="wrapper center remove-last-margin">
+            <img class="header-logo center" src="https://unicorn-space-tours.netlify.app/img/logo.svg" alt="UST logo">
+            <h1>Book your tour</h1>
+            <p class="lead center max-line-length">
+                Complete the booking form, and get ready for blast off!
+            </p>
+        </header>
+    </div>
+    <!-- Main -->
+    <main>
+        <section class="wrapper center margin-v-lg">
+            <form action="/success" class="center max-line-length" method="POST" name="book-tour"><input type="hidden"
+                    name="form-name" value="book-tour">
+                <p class="hidden">
+                    <label>Don't fill this out if you're human: <input name="bot-field"></label>
+                </p>
+                <div class="form-field">
+                    <label for="first_name">First Name</label>
+                    <input type="text" id="first_name" name="first_name">
+                </div>
+                <div class="form-field">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" id="last_name" name="last_name">
+                </div>
+                <div class="form-field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-field">
+                    <label for="tour">Tour</label>
+                    <select name="tour" id="tour">
+                        <option>Make a selection</option>
+                        <option value="Mars">Mars</option>
+                        <option value="Saturn">Saturn</option>
+                        <option value="Pluto">Pluto</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <button type="submit" class="btn">Book My Tour</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <!-- Footer -->
+    <div class="background-black padding-v-md">
+        <footer class="wrapper center flexbox flexbox--aligncenter">
+            <div>
+                <img class="footer-logo" src="https://unicorn-space-tours.netlify.app/img/logo.svg" alt="UST logo">
+            </div>
+            <div>
+                <div class="flex-container">
+                    <div class="button">
+                        <a href="booking.html">Contact Us</a>
+                    </div>
+                </div>
+                <p class="clear-margins">© 2023 Galactic Space Tours</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
