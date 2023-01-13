@@ -392,6 +392,8 @@ h2 {
     display: flex;
     min-width: 10ch;
     margin: auto;
+    outline: none;
+    border: none;
 }
 
 .button:hover,
@@ -547,4 +549,9 @@ form .btn {
     align-self: center;
     font-size: 125%;
     margin-top: 24px;
+}
+
+/* Contact */
+.center .button {
+    margin-top: 2rem;
 }
