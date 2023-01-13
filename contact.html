@@ -6,10 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
+    <div class="header-wrapper background-dark">
+        <header class="wrapper center remove-last-margin">
+            <img class="header-logo center" src="https://unicorn-space-tours.netlify.app/img/logo.svg" alt="UST logo">
+            <h1>Contact Us</h1>
+            <p class="lead center max-line-length">
+                I will personally get in touch with you!
+            </p>
+        </header>
+    </div>
+    <main>
+        <section class="wrapper center margin-v-lg">
+            <form action="/success" class="center max-line-length" method="POST" name="book-tour"><input type="hidden"
+                    name="form-name" value="book-tour">
+                <p class="hidden">
+                    <label>Don't fill this out if you're human: <input name="bot-field"></label>
+                </p>
+                <div class="form-field">
+                    <label for="first_name">Name</label>
+                    <input type="text" id="first_name" name="first_name">
+                </div>
+                <div class="form-field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-field">
+                    <label for="message">Message</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-field">
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </form>
+        </section>
+    </main>
 </body>
 
 </html>
